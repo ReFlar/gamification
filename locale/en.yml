@@ -7,7 +7,7 @@ reflar-gamification:
   forum:
     user:
       points: "Points: {points}"
-      rank: "{rank}"
+      rank: "Rank: {rank}"
   admin:
     nav:
       desc: Gamification for your Flarum community
