@@ -8,9 +8,14 @@ reflar-gamification:
     user:
       points: "Puntos: {points}"
       rank: "{rank}"
+    modal:
+      title: Votos
+      upvotes_label: Votos Positivos
+      downvotes_label: Votos Negativos
   admin:
     permissions:
       vote_label: Publicaciones Positivas/Negativas
+      see_votes_label: Ver votos Positivos y Negativos de este post.
     nav:
       desc: Gamificación para tu comunidad Flarum.
     page:
