@@ -7,7 +7,7 @@ reflar-gamification:
   forum:
     user:
       points: "Points: {points}"
-      rank: "{rank}"
+      rank: "Rank: {rank}"
   admin:
     permissions:
       vote_label: Upvote/Downvote posts
