@@ -159,9 +159,9 @@ class SaveVotesToDatabase
     public function sendData($post, $user, $actor, $type, $before)
     {
         $oldVote = Notification::where([
-            'sender_id' => $actor->id,
+            'sender_id'  => $actor->id,
             'subject_id' => $post->id,
-            'data' => '"'.$before.'"',
+            'data'       => '"'.$before.'"',
         ])->first();
 
         if ($oldVote) {
