@@ -80,6 +80,16 @@ class Gamification
     {
         $blockedUsers = explode(', ', $this->settings->get('reflar.gamification.blockedUsers'));
 
+        $maximumUserExposed = $this->settings->get('reflar.gamification.blockedUsers', 10));
+
+        if ($limit > $maximumUserExposed) {
+            $limit = $maximumUserExposed;
+        }
+
+        if ($offset >= $maximumUserExposed) {
+            return [];
+        }
+
         $query = User::query()
             ->whereNotIn('username', $blockedUsers)
             ->orderBy('votes', 'desc')
