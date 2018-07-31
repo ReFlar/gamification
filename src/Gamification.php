@@ -80,7 +80,7 @@ class Gamification
     {
         $blockedUsers = explode(', ', $this->settings->get('reflar.gamification.blockedUsers'));
 
-        $maximumUserExposed = $this->settings->get('reflar.gamification.blockedUsers', 10));
+        $maximumUserExposed = $this->settings->get('reflar.gamification.maximumUserExposed', 25);
 
         if ($limit > $maximumUserExposed) {
             $limit = $maximumUserExposed;
@@ -88,6 +88,10 @@ class Gamification
 
         if ($offset >= $maximumUserExposed) {
             return [];
+        }
+
+        if (($limit + $offset) > $maximumUserExposed) {
+            $limit = $limit + $offset - $maximumUserExposed;
         }
 
         $query = User::query()
