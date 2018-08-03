@@ -20,6 +20,11 @@ use Flarum\Settings\SettingsRepositoryInterface;
 class Gamification
 {
     /**
+     * Sets the maximum number of user exposed through the ranking api.
+     */
+    const MAXIMUM_USER_EXPOSED = 25;
+
+    /**
      * @var PostRepository
      */
     protected $posts;
@@ -80,18 +85,16 @@ class Gamification
     {
         $blockedUsers = explode(', ', $this->settings->get('reflar.gamification.blockedUsers'));
 
-        $maximumUserExposed = $this->settings->get('reflar.gamification.maximumUserExposed', 25);
-
-        if ($limit > $maximumUserExposed) {
-            $limit = $maximumUserExposed;
+        if ($limit > self::MAXIMUM_USER_EXPOSED) {
+            $limit = self::MAXIMUM_USER_EXPOSED;
         }
 
-        if ($offset >= $maximumUserExposed) {
+        if ($offset >= self::MAXIMUM_USER_EXPOSED) {
             return [];
         }
 
-        if (($limit + $offset) > $maximumUserExposed) {
-            $limit = $limit + $offset - $maximumUserExposed;
+        if (($limit + $offset) > self::MAXIMUM_USER_EXPOSED) {
+            $limit = $limit + $offset - self::MAXIMUM_USER_EXPOSED;
         }
 
         $query = User::query()
