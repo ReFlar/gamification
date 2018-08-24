@@ -16,8 +16,8 @@ reflar-gamification:
       upvote: "{username} deu voto positivo na sua publicação"
       downvote: "{username} de voto negativo na sua publicação"
     user:
-      points: "Pontos: {pontos}"
-      rank: "{posição}"
+      points: "Pontos: {points}"
+      rank: "{rank}"
     modal:
       title: Votos
       upvotes_label: 'Votos Positivos:'
