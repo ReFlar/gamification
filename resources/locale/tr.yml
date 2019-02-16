@@ -1,0 +1,67 @@
+core:
+  forum:
+    index_sort:
+      hot_button: Trendlerde
+      
+reflar-gamification:
+  forum:
+    vote_title: Kimin Oy Verdiğini Göster
+    nav:
+      name: Rütbeler
+    ranking:
+      rank: Alan
+      name: Kullanıcı
+      amount: Puan
+    notification:
+      upvote: "{username} gönderinizi beğendi"
+      downvote: "{username} gönderinizi beğenmedi"
+    user:
+      points: "Puan: {points}"
+      rank: "{rank}"
+    modal:
+      title: Oy verenler
+      upvotes_label: 'Beğenenler:'
+      downvotes_label: 'Beğenmeyenler:'
+    mod_item: Oy verenleri gör
+  admin:
+    permissions:
+      vote_label: Gönderilere oy verme
+      see_votes_label: Gönderi oylarını görme
+      see_ranking_page: Rütbeleme sayfasını görme
+    nav:
+      desc: Flarum kitleniz için puan sistemi
+    page:
+      rankings:
+        blocked:
+          placeholder: CDK2020, Ralkage, AngelAvila
+          title: Engelli Kullanıcılar
+          help: These users will not be shown on the ranking page. Usernames should be seperated by a comma followed by a space.
+        title: Rütbeleme Sayfası
+        enable: Özel resimleri aktif et
+        custom_image_1: 1st place image
+        custom_image_2: 2nd place image
+        custom_image_3: 3rd place image
+      votes:
+        points_title: Puan yer tutucusu
+        points_placeholder: "Puan: "
+        color_holder: '#ffffff'
+        auto_upvote: Gönderi eklendiğinde otomatik olarak oy ver
+        title: Oylar
+        vote_color: Oy rengi
+        icon_name: Beğeni/Beğenmeme ikonu
+        icon_help: "Input any Font-Awesome icon that is suffixed with -up and -down. Examples: arrow, thumbs, chevron"
+      save_settings: Ayarları kaydet
+      convert:
+        button: Beğenileri oya çevir
+        help: Convert your previous likes from flarum-ext-likes into upvotes, as well as calculate the hotness for all current discussions.
+        converting: Your likes are now being converted. Refresh your site after a few minutes to see the process finished. (Conversion time might take a while depending on your total forum likes)
+        converted: "Başarıyla {number} beğeni çevirildi"
+      ranks:
+        title: Rütbeler
+        ranks: Özel Rütbeler
+        number_title: Kaç tane rütbe etiketi gözüksün?
+        help:
+          color: '#ffffff'
+          help: "Gerekli puan değerini, ismi ve hex renk değerini girin"
+          points: Puan
+          name: İsim
