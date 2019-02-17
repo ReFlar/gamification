@@ -35,12 +35,12 @@ reflar-gamification:
         blocked:
           placeholder: CDK2020, Ralkage, AngelAvila
           title: Engelli Kullanıcılar
-          help: These users will not be shown on the ranking page. Usernames should be seperated by a comma followed by a space.
+          help: Kullanıcılar rütbeleme sayfasında gözükmeyecek. Kullanıcı adları virgülün takibinde nokta ile ayrılmalıdır.
         title: Rütbeleme Sayfası
         enable: Özel resimleri aktif et
-        custom_image_1: 1st place image
-        custom_image_2: 2nd place image
-        custom_image_3: 3rd place image
+        custom_image_1: 1. alan dosyası
+        custom_image_2: 2. alan dosyası
+        custom_image_3: 3. alan dosyası
       votes:
         points_title: Puan yer tutucusu
         points_placeholder: "Puan: "
@@ -49,12 +49,12 @@ reflar-gamification:
         title: Oylar
         vote_color: Oy rengi
         icon_name: Beğeni/Beğenmeme ikonu
-        icon_help: "Input any Font-Awesome icon that is suffixed with -up and -down. Examples: arrow, thumbs, chevron"
+        icon_help: "-up ve -down ile bitebilecek bir Font-Awesome ikonu girin. Örnekler: arrow, thumbs, chevron"
       save_settings: Ayarları kaydet
       convert:
-        button: Beğenileri oya çevir
-        help: Convert your previous likes from flarum-ext-likes into upvotes, as well as calculate the hotness for all current discussions.
-        converting: Your likes are now being converted. Refresh your site after a few minutes to see the process finished. (Conversion time might take a while depending on your total forum likes)
+        button: "Beğenileri oya çevir"
+        help: Eski flarum-ext-likes verilerinizi oylara çevirin, Aynı zamanda tüm forum başlıklarının trend değerini ölçün.
+        converting: Beğenileriniz şu an çeviriliyor. Bir kaç dakika sonra sayfayı yenileyerek aşamayı izleyin. (Çevirme verinin büyüklüğüne göre zaman alabilir)
         converted: "Başarıyla {number} beğeni çevirildi"
       ranks:
         title: Rütbeler
