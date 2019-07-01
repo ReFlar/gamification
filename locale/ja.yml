@@ -1,0 +1,67 @@
+core:
+  forum:
+    index_sort:
+      hot_button: トレンド
+      
+reflar-gamification:
+  forum:
+    vote_title: 誰が投票したか
+    nav:
+      name: ランキング
+    ranking:
+      rank: 位
+      name: ユーザー
+      amount: ポイント
+    notification:
+      upvote: "{username}があなたの投稿を高評価しました"
+      downvote: "{username}があなたの投稿を低評価しました"
+    user:
+      points: "ポイント数: {points}"
+      rank: "{rank}"
+    modal:
+      title: 投票者
+      upvotes_label: '高評価した人:'
+      downvotes_label: '低評価した人:'
+    mod_item: 投票者を見る
+  admin:
+    permissions:
+      vote_label: 投稿を高評価/低評価する
+      see_votes_label: 投稿の高評価/低評価を見る
+      see_ranking_page: ランキングページを見る
+    nav:
+      desc: あなたのFlarumコミュニティのためのゲーミフィケーション
+    page:
+      rankings:
+        blocked:
+          placeholder: CDK2020, Ralkage, AngelAvila
+          title: 無視されたユーザー
+          help: これらのユーザーはランキングページにのらなくなります。ユーザーネームはカンマで分けてください。
+        title: ランキングページ
+        enable: カスタム画像を有効化する
+        custom_image_1: 1位の画像
+        custom_image_2: 2位の画像
+        custom_image_3: 3位の画像
+      votes:
+        points_title: Points Placeholder
+        points_placeholder: "ポイント数: "
+        color_holder: '#ffffff'
+        auto_upvote: 投稿したときに自動で高評価をつける
+        title: 投票数
+        vote_color: 投票色
+        icon_name: 高評価/低評価アイコン
+        icon_help: "-upや-downのような接尾がついているFont-Awesomeのアイコンを指定してください。"
+      save_settings: 設定を保存する
+      convert: 
+        button: イイねを高評価に変換する
+        help: flarum-ext-likesのイイねを高評価に変更し、現在の全てのスレッドに対しての注目度を計算する
+        converting: あなたのイイねは現在変換されています。 プロセスが終了するまで数分待ってから、サイトを更新してください。 (変換時間はあなたのサイトのイイねの数と比例します。)
+        converted: "{number}イイねの変換に成功しました。"
+      ranks:
+        title: ランク
+        ranks: カスタムランク
+        number_title: どの程度の数のバッジが見えるようになればよいですか？
+        help:
+          color: '#ffffff'
+          help: "ランクに必要なhexカラーと、必要な数の高評価を入力してください。"
+          points: ポイント数
+          name: 名前
